@@ -15,6 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-intent href="rtsp://*" />
     <platform name="android">
         <preference name="android-minSdkVersion" value="14" />
         <allow-intent href="market:*" />
@@ -25,7 +26,15 @@
         <preference name="BackupWebStorage" value="none" />
     </platform>
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.0.1" />
+    <plugin name="cordova-plugin-geolocation" spec="~1.0.0" />
+    <plugin name="cordova-plugin-streaming-media" spec="~1.0.2"/>
+    <plugin name="phonegap-plugin-barcodescanner">
+        <param name="CAMERA_USAGE_DESCRIPTION" value="To scan barcodes." />
+    </plugin>
 </widget>

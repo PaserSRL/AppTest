@@ -10,7 +10,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
@@ -74,6 +74,30 @@
                             <p>Page content goes here</p>
                             <!-- Link to another page -->
                             <a href="about.html">About app</a>
+                        </div>
+
+                        <div class="content-block">
+                            <p>Geolocalizzazione</p>
+                            <!-- Link to another page -->
+                            <p class="buttons-row">
+                                <a class="button button-big button-fill get-location" href="#">Ottieni Posizione</a>
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <p>Scansione QR Code</p>
+                            <!-- Link to another page -->
+                            <p class="buttons-row">
+                                <a class="button button-big button-fill scan-qrcode" href="#">Scansiona QRCODE</a>
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <p>Video Streaming</p>
+                            <!-- Link to another page -->
+                            <p class="buttons-row">
+                                <a class="button button-big button-fill" href="streaming.html">Streaming</a>
+                            </p>
                         </div>
                     </div>
                 </div>
