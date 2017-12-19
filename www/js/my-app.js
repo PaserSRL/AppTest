@@ -33,7 +33,7 @@ myApp.onPageAfterAnimation('streaming', function () {
     console.log(current_page);
 
     var videoUrl = 'http://d2qguwbxlx1sbt.cloudfront.net/TextInMotion-Sample-576p.mp4';
-    videoUrl = 'rtsp://admin:1234@192.168.1.224:554/live1.264';
+    videoUrl = 'rtsp://184.72.239.149/vod/mp4:BigBuckBunny_175k.mov';
 
     window.plugins.streamingMedia.playVideo(videoUrl);
 });
