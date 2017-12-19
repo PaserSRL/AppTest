@@ -16,6 +16,13 @@ var mainView = myApp.addView('.view-main', {
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     current_page = mainView.activePage.name;
+
+    navigator.notification.alert(
+        'You are the winner!',  // message
+        alertDismissed,         // callback
+        'Game Over',            // title
+        'Done'                  // buttonName
+    );
 });
 
 myApp.onPageInit('*', function () {
@@ -35,7 +42,7 @@ myApp.onPageAfterAnimation('streaming', function () {
     var videoUrl = 'http://d2qguwbxlx1sbt.cloudfront.net/TextInMotion-Sample-576p.mp4';
     videoUrl = 'rtsp://184.72.239.149/vod/mp4:BigBuckBunny_175k.mov';
 
-    window.plugins.streamingMedia.playVideo(videoUrl);
+    //window.plugins.streamingMedia.playVideo(videoUrl);
 });
 
 
@@ -106,4 +113,8 @@ $$(".scan-qrcode").on('click', function(e) {
     );
 });
 
+
+$$(".vibration").on('click', function(e) {
+    navigator.vibrate(200);
+});
 

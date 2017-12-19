@@ -47,6 +47,9 @@
         },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {},
@@ -299,6 +302,24 @@
             "clobbers": [
                 "window.Media"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-vibration/www/vibration.js",
+            "id": "cordova-plugin-vibration.notification",
+            "pluginId": "cordova-plugin-vibration",
+            "merges": [
+                "navigator.notification",
+                "navigator"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-vibration/src/browser/Vibration.js",
+            "id": "cordova-plugin-vibration.Vibration",
+            "pluginId": "cordova-plugin-vibration",
+            "merges": [
+                "navigator.notification",
+                "navigator"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -311,6 +332,7 @@
         "cordova-rtsp": "0.1.2",
         "com.dawsonloudon.videoplayer": "1.0.0",
         "cordova-plugin-file": "5.0.0",
-        "cordova-plugin-media": "4.0.0"
+        "cordova-plugin-media": "4.0.0",
+        "cordova-plugin-vibration": "2.1.6"
     }
 }
